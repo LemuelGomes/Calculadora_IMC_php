@@ -30,6 +30,5 @@
         }
     }
 
-
     header('Location: index.php?texto=' . $texto)
  ?>
