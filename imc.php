@@ -6,24 +6,38 @@
     $p1 = pow(doubleval($altura), 2);
     $imc = doubleval($peso) / doubleval($p1);
 
-    if($imc < 18.5) {
+    if($imc < 18.5) 
+    {
         $texto = 'Você está abaixo do Peso!';
-    } else {
-        if($imc < 24.9){
+    } 
+    else
+    {
+        if($imc < 24.9)
+        {
             $texto = 'Seu peso é o ideal!';
-        } else {
-            if($imc < 29.9){
+        } 
+        else 
+        {
+            if($imc < 29.9)
+            {
                 $texto = 'Está levemente acima do peso';
                 
-            } else {
-                if($imc < 34.3){
-                    $texto = 'Está moderadamente Obeso';
-                    
-                } else {
-                    if($imc < 39.9) {
+            } 
+            else 
+            {
+                if($imc < 34.3)
+                {
+                    $texto = 'Está moderadamente Obeso';                    
+                } 
+                else 
+                {
+                    if($imc < 39.9) 
+                    {
                         $texto = 'Está com Obesidade Severa';
-                    } else {
-                        $texto = 'É fudeu parça';
+                    } 
+                    else 
+                    {
+                        $texto = 'Está em estado crítico';
                     }
                 }
             }
